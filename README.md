@@ -77,7 +77,7 @@ Content-Type: application/json
 }
 ```
 
-## For reader :
+## To add readers :
 ```json
 POST /readers HTTP/1.1
 Host: example.com
