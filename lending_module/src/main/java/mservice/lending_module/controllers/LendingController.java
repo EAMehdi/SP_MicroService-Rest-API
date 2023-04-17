@@ -8,6 +8,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/lendings")
 public class LendingController {
@@ -53,6 +55,12 @@ public class LendingController {
         }
         lendingRepository.delete(lending);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
+    //Methode pour recuperer tous les emprunts
+    @GetMapping
+    public List<Lending> getAllLendings() {
+        return lendingRepository.findAll();
     }
 }
 

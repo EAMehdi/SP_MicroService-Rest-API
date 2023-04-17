@@ -1,0 +1,21 @@
+port: 8005
+servlet:
+  context-path: /
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  cloud:
+    gateway:
+      routes:
+        - id: book_route
+          uri: http://localhost:8002
+          predicates:
+            - Path=/books/**
+        - id: reader_route
+          uri: http://localhost:8001
+          predicates:
+            - Path=/readers/**
+        - id: lending_route
+          uri: http://localhost:8003
+          predicates:
+            - Path=/lendings/**
