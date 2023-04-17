@@ -33,4 +33,89 @@ Name & port :
 - For the One common database version :
   - Name of the database : `micro_service`
 
+Body request to add books
+```json
+POST /books HTTP/1.1
+Host: localhost:8002
+Content-Type: application/json
 
+{
+    "isbn": "9780321356680",
+    "author": "Robert C. Martin",
+    "title": "Clean Code",
+    "editor": "Prentice Hall",
+    "edition": 1
+}
+
+```
+
+```json
+POST /books HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+    "isbn": "9780061120084",
+    "author": "Henry David Thoreau",
+    "title": "Walden",
+    "editor": "LaVieDansLesBois",
+    "edition": 1
+}
+```
+
+```json
+POST /books HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+    "isbn": "9780679735779",
+    "author": "Bret Easton Ellis",
+    "title": "American Psycho",
+    "editor": "Vintage",
+    "edition": 1
+}
+```
+
+## For reader :
+```json
+POST /readers HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+    "gender": "Male",
+    "firstName": "Michael",
+    "lastName": "Scott",
+    "birthDate": "1965-03-15",
+    "address": "1725 Slough Avenue"
+}
+```
+
+```json
+POST /readers HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+    "gender": "Male",
+    "firstName": "Linus",
+    "lastName": "Torvalds",
+    "birthDate": "1969-12-28",
+    "address": "P.O. Box 546"
+}
+```
+
+```json
+POST /readers HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+    "gender": "Male",
+    "firstName": "Patrick",
+    "lastName": "Bateman",
+    "birthDate": "1965-04-01",
+    "address": "55 West 81st Street"
+}
+```
