@@ -129,7 +129,7 @@ Content-Type: application/json
 
 {
     "book": {
-        "isbn": "9780679735779"
+        "isbn": "9780061120084"
     },
     "reader": {
         "id": 1
@@ -147,7 +147,7 @@ Content-Type: application/json
 
 {
     "book": {
-        "isbn": "9780596007126"
+        "isbn": "9780679735779"
     },
     "reader": {
         "id": 2
