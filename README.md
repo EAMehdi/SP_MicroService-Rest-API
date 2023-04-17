@@ -27,7 +27,7 @@ Name & port :
 - `book_module` : 8002
 - `reader_module` : 8001
 - `lending_module`: 8003
-- `gateaway_module` : []
+- `gateaway_module` : 8080
 
 ### **The PostGresSQL databases** :
 
@@ -36,6 +36,15 @@ Name & port :
 
 To test the Database : 
 - use the *Postman Collection* in the folder 
+
+Call from the Gateway : 
+
+```http
+http://localhost:8005/books
+http://localhost:8005/readers
+http://localhost:8005/lendings
+```
+
 
 
 ### Body request to add books
