@@ -22,14 +22,15 @@
 
 ### Execute the following microservice (Java 17):
 
+Name & port : 
 - `book_module` : 8002
 - `reader_module` : 8001
 - `lending_module`: 8003
-- `gateaway_module` : ...
+- `gateaway_module` : []
 
-### The PostGresSQL databases :
+### **The PostGresSQL databases** :
 
-For the One common database version :
-Name of the database : micro_service
+- For the One common database version :
+  - Name of the database : `micro_service`
 
 
