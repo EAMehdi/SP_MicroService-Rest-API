@@ -1,0 +1,327 @@
+{
+    "info": {
+        "_postman_id": "b8701ab3-34a3-4063-956d-6245b5aa9f13",
+        "name": "Library API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Add book - Clean Code",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": {
+                        "isbn": "9780321356680",
+                        "author": "Robert C. Martin",
+                        "title": "Clean Code",
+                        "editor": "Prentice Hall",
+                        "edition": 1
+                    },
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8002/books",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8002",
+                    "path": [
+                        "books"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Add book - Walden",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": {
+                        "isbn": "9780061120084",
+                        "author": "Henry David Thoreau",
+                        "title": "Walden",
+                        "editor": "LaVieDansLesBois",
+                        "edition": 1
+                    },
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8002/books",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8002",
+                    "path": [
+                        "books"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Add book - American Psycho",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": {
+                        "isbn": "9780679735779",
+                        "author": "Bret Easton Ellis",
+                        "title": "American Psycho",
+                        "editor": "Vintage",
+                        "edition": 1
+                    },
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8002/books",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8002",
+                    "path": [
+                        "books"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Add reader - Michael Scott",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value":"application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": {
+                        "gender": "Male",
+                        "firstName": "Michael",
+                        "lastName": "Scott",
+                        "birthDate": "1965-03-15",
+                        "address": "1725 Slough Avenue"
+                    },
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8001/readers",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8001",
+                    "path": [
+                        "readers"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Add reader - Linus Torvalds",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": {
+                        "gender": "Male",
+                        "firstName": "Linus",
+                        "lastName": "Torvalds",
+                        "birthDate": "1969-12-28",
+                        "address": "P.O. Box 546"
+                    },
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8001/readers",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8001",
+                    "path": [
+                        "readers"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Add reader - Patrick Bateman",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": {
+                        "gender": "Male",
+                        "firstName": "Patrick",
+                        "lastName": "Bateman",
+                        "birthDate": "1965-04-01",
+                        "address": "55 West 81st Street"
+                    },
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8001/readers",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8001",
+                    "path": [
+                        "readers"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Lend book - Walden to Michael Scott",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": {
+                        "book": {
+                            "isbn": "9780061120084"
+                        },
+                        "reader": {
+                            "id": 1
+                        },
+                        "lendingDate": "2023-04-17",
+                        "returnDate": "2023-05-17"
+                    },
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8003/lendings",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8003",
+                    "path": [
+                        "lendings"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Lend book - American Psycho to Linus Torvalds",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": {
+                        "book": {
+                            "isbn": "9780679735779"
+                        },
+                        "reader": {
+                            "id": 2
+                        },
+                        "lendingDate": "2023-04-18",
+                        "returnDate": "2023-05-18"
+                    },
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8003/lendings",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8003",
+                    "path": [
+                        "lendings"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
