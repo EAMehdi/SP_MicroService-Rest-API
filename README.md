@@ -56,7 +56,7 @@ Content-Type: application/json
 
 ```json
 POST /books HTTP/1.1
-Host: example.com
+Host: localhost:800
 Content-Type: application/json
 
 {
@@ -70,7 +70,7 @@ Content-Type: application/json
 
 ```json
 POST /books HTTP/1.1
-Host: example.com
+Host: localhost:800
 Content-Type: application/json
 
 {
@@ -85,7 +85,7 @@ Content-Type: application/json
 ## To add readers :
 ```json
 POST /readers HTTP/1.1
-Host: example.com
+Host: localhost:800
 Content-Type: application/json
 
 {
@@ -99,7 +99,7 @@ Content-Type: application/json
 
 ```json
 POST /readers HTTP/1.1
-Host: example.com
+Host: localhost:800
 Content-Type: application/json
 
 {
@@ -113,7 +113,7 @@ Content-Type: application/json
 
 ```json
 POST /readers HTTP/1.1
-Host: example.com
+Host: localhost:800
 Content-Type: application/json
 
 {
@@ -129,7 +129,7 @@ Content-Type: application/json
 
 ```json
 POST /lendings HTTP/1.1
-Host: example.com
+Host: localhost:800
 Content-Type: application/json
 
 {
@@ -147,7 +147,7 @@ Content-Type: application/json
 
 ```json
 POST /lendings HTTP/1.1
-Host: example.com
+Host: localhost:800
 Content-Type: application/json
 
 {
