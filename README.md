@@ -9,6 +9,7 @@
 |                  | /books/{isbn}         | DELETE      | 
 | lending_module   | /lendings             | POST        | 
 |                  | /lendings/{id}        | GET         | 
+|                  | /lendings             | GET         | 
 |                  | /lendings/{id}        | PUT         | 
 |                  | /lendings/{id}        | DELETE      | 
 | reader_module    | /readers              | GET         | 
