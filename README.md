@@ -34,7 +34,11 @@ Name & port :
 - For the One common database version :
   - Name of the database : `micro_service`
 
-Body request to add books
+To test the Database : 
+- use the *Postman Collection* in the folder 
+
+
+### Body request to add books
 ```json
 POST /books HTTP/1.1
 Host: localhost:8002
