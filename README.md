@@ -119,3 +119,40 @@ Content-Type: application/json
     "address": "55 West 81st Street"
 }
 ```
+
+## For lending :
+
+```json
+POST /lendings HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+    "book": {
+        "isbn": "9780679735779"
+    },
+    "reader": {
+        "id": 1
+    },
+    "lendingDate": "2023-04-17",
+    "returnDate": "2023-05-17"
+}
+```
+
+
+```json
+POST /lendings HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+    "book": {
+        "isbn": "9780596007126"
+    },
+    "reader": {
+        "id": 2
+    },
+    "lendingDate": "2023-04-18",
+    "returnDate": "2023-05-18"
+}
+``` 
