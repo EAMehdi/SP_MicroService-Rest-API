@@ -40,9 +40,9 @@ To test the Database :
 Call from the Gateway : 
 
 ```http
-http://localhost:8005/books
-http://localhost:8005/readers
-http://localhost:8005/lendings
+http://localhost:8080/books
+http://localhost:8080/readers
+http://localhost:8080/lendings
 ```
 
 
